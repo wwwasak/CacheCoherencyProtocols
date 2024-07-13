@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>Assignment: The Cache Coherency Protocols</title>
+</head>
+<body>
+    <h1>Assignment: The Cache Coherency Protocols</h1>
+    <p class="cws_code_q">InitInputs</p>
+    <p>
+        This assignment familiarizes you with four of the cache coherency protocols —MSI, MOSI, MESI,MOESI.
+    </p>
+    <p>
+        Consider a multiprocessor system with 4 cores (Core A, Core B, Core C,Core D) and a shared memory.
+        And the cache lines of all cores are invalid in the initial state (I state). 
+        </p>
+    <p>
+        Now there are 5 operations performed on address 'X' as follows:</p>
+        <span class="cws_code_q">GetOperations</span>
+        <p> Through the above operations,you need to record the state after each operation and the total number of memory write-back and invalidation operations.</p>
+       <p> Please use the abbreviations M, S, I, O, E to represent the status of each cache line.</p><p>Follow the instructions of "Core A status", "Core B status", "Core C status", "Core D status", "the total number of memory write-back ” ,"the total number of invalidation operations "Write your answer in this order.
+    </p>
+    <h2>Task1</h2>
+    <p>
+        Through the above operations, based on the MSI protocol
+    </p>
+<p><span style="color: red;" class="cws_code_a">GetMSIAll</span></p>
+    <h2>Task2</h2>
+    <p>
+        Through the above operations, based on the MESI protocol
+    </p>
+    <p><span style="color: red;" class="cws_code_a">GetMESIAll</span></p>
+
+    <h2>Task3</h2>
+    <p>
+        Through the above operations, based on the MOSI protocol
+    </p>
+    <p><span style="color: red;" class="cws_code_a">GetMOSIAll</span></p>
+    <h2>Task4</h2>
+    <p>
+        Through the above operations, based on the MOESI protocol
+    </p>
+    <p><span style="color: red;" class="cws_code_a">GetMOESIAll</span></p>
+
+    <div style="border: 1px solid green; border-radius: 5px; padding: 10px; background-color: lightgoldenrodyellow; color: green;">
+        <p>
+            <span style="font-size: large;">&#x270d;</span>
+            The expected learning outcomes of this assignment are as follows.
+            <ul>
+                <li>
+                    Understand the operation of the four protocols by record cache state.
+                </li>
+                <li>
+                    Understand the pros and cons of different protocols by recording the number of memory write-back, invalidation operations
+                </li>
+            </ul>
+        </p>
+        <p>
+            Please do talk to your instructor if you think you have not met these outcomes.
+        </p>
+    </div>
+    <p>
+        A sample answer file that correctly follows the expected format would look like the following:
+    </p>
+    <div id="SampleAnswers" style="border: 1px solid green; border-radius: 5px; padding: 10px;
+           background-color: lightgreen; color: green; font-family: Courier New, Courier, monospace;">
+        AUID: 987654321<br />
+        1-1: M,I,I,I,0,1<br />
+        1-2: M,I,I,I,0,2<br />
+        ...<br />
+        1-5: M,I,I,I,0,2<br />
+        2-1: M,I,I,I,0,1<br />
+        ...<br />
+        4-1: M,I,I,I,0,1<br />
+        ...<br />
+        4-5: M,I,I,I,0,1<br />
+    </div>
+    <p></p>
+    <hr />
+    <p>
+        This assignment is personalized for <span class="cws_code_q">$ID</span>.
+        'I haven't tested this, but it should work.'
+    </p>
+</body>
+</html>
