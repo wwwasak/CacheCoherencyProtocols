@@ -1,5 +1,6 @@
 # CacheCoherencyProtocols
-CacheCoherencyProtocols demonstration base on Dividni-https://dividni.comLinks to an external site.
+CacheCoherencyProtocols demonstration base on Dividni(https://dividni.com)
+auto generate assignment for student to understand cache coherency protocals. 
 The assignments are divided into topics based on different protocols. Task1 is for MSI, task2 is for MESI, task3 is for MOSI, and task4 is for MOESI. They are not divided according to the knowledge points examined. Each task examines the status changes and corresponding status of the protocol. Performance operations (I also consolidated them myself).
 Let students understand the state changes under the same operation under different protocols when a multi-processor based on 4 cores performs read and write operations on the same address, so that students can better understand the rules of state changes.
 But in addition to status changes, I also added additional statistics on the number of memory wire-back and invalid operations to allow students to understand the performance differences under different protocols. However, considering the workload of actual students answering questions, I only randomly generated 5 operations (of course this can be adjusted).
